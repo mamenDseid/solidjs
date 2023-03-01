@@ -1,0 +1,13 @@
+
+
+.mt {
+    position: sticky;
+    top: 0;
+    display: flex;
+    background: white;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    padding: 8px 10px;
+    z-index: 10;
+  }
