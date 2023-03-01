@@ -9,7 +9,6 @@ function App() {
   return (
     <div class={styles.App}>
         
-        <h1>My Site with Lots of Pages</h1>
       <Routes>
         <Route path="/users" component={Users} />
         <Route path="/" component={Home} />

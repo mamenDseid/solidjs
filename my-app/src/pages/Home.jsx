@@ -1,7 +1,10 @@
+import HeaderScreen from "../components/HeaderScreen";
 
 
 export default function Home() {
   return (
-    <div>Home</div>
+    <div>
+      <HeaderScreen/>
+    </div>
   )
 }
