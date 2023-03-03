@@ -1,7 +1,10 @@
-import { Route, Routes } from "@solidjs/router";
+import { Route, Routes } from "solid-app-router";
 import { createEffect, createSignal } from "solid-js";
 import Nav from "./components/Nav";
-import SavedRepos from "./pages/SavedRepos";
+
+
+const Home = lazy(() => import('./pages/Home'))
+const SavedRepos = lazy(() => import('./pages/SavedRepos'))
 
  function App() {
   const [username, setUserName] = createSignal('ebenezerdon')

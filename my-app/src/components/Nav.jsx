@@ -1,4 +1,4 @@
-import { NavLink } from "@solidjs/router";
+import { NavLink } from "solid-app-router";
  function Nav() {
 
     return (
