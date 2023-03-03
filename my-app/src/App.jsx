@@ -1,5 +1,7 @@
+import { Route, Routes } from "@solidjs/router";
 import { createEffect, createSignal } from "solid-js";
 import Nav from "./components/Nav";
+import SavedRepos from "./pages/SavedRepos";
 
  function App() {
   const [username, setUserName] = createSignal('ebenezerdon')
@@ -11,9 +13,15 @@ import Nav from "./components/Nav";
   })
   return (
     <div class="container">
-      <h4>Hello world</h4>
+      
       <Nav/>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/favrepos" element={<SavedRepos />} />
+      </Routes>
     </div>
   );
 }
+
+export { username, setUserName, repos }
   export default App;
