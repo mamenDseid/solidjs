@@ -3,7 +3,7 @@ import { render } from 'solid-js/web';
 import { Router } from "solid-app-router";
 //import './index.css';
 import App from './App';
-import 'bootstrap/dist/css/bootstrap.min.css'
+import './index.css'
 const root = document.getElementById('root');
 
 if (import.meta.env.DEV && !(root instanceof HTMLElement)) {

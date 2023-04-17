@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'ShineBold';
+    src: local('Geometos_neue_bold'),
+      url('./fonts/Geometos_neue_bold.otf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'ShineLight';
+    src: local('Geometos_neue_light'),
+      url('./fonts/Geometos_neue_light.otf') format('truetype');
+  }
+  @font-face {
+    font-family: 'ShineF';
+    src: local('Shine_Normal'), url('./fonts/shineFont.woff2') format('truetype');
+  }
+  @font-face {
+    font-family: 'ShineIconfont';
+    src: local('Shne_icon'), url('./fonts/iconfont.woff2') format('truetype');
+  }
+  ::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+  }
+  .suiiconfont-critical {
+    font-family: 'ShineIconfont';
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+  }
+  * {
+    margin: 0;
+  }
+  
+  #root {
+    margin: 0 auto;
+    height: 100vh;
+    max-width: 600px;
+    font-family: 'ShineF';
+  }
+  
+  .homesvg {
+    width: 26px;
+  }
+  
+  .btmheader {
+    z-index: 100;
+    max-width: 600px;
+    position: fixed;
+  
+    margin: 0px auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .btmnav {
+    background: #fdfdfd;
+    padding: 8px 8px 0;
+    border-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top: 1px solid #eeeeee;
+    height: 50px;
+  }
+  
+  .btmnav ul li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    color: #767676;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
