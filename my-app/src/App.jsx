@@ -1,12 +1,12 @@
 import BottomNav from "./components/nav/BottomNav";
 import RootRouter from "./routes/RootRouter";
 
- function App() {
+function App() {
 
   return (
-    <div>
-      <RootRouter/>
-    </div>
+
+    <RootRouter />
+
   );
 }
-  export default App;
+export default App;

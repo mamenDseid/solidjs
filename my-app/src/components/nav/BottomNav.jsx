@@ -5,10 +5,16 @@ import  PersonOutlineOutlinedIcon from "@suid/icons-material/PersonOutlineOutlin
 import HomeIcon from "@suid/icons-material/Home";
 import ShoppingBagOutlinedIcon from "@suid/icons-material/ShoppingBagOutlined"
 import DressOutlined from "./DressOutlined";
-import { A } from "@solidjs/router";
+import DressIconFilled from "./DressIconFilled";
+
+import { A, useLocation } from "@solidjs/router";
+import HomeInActiveIcon from "./HomeInActiveIcon";
 
 function BottomNav() {
-
+const location = useLocation()
+function setActiveLoc(cloc){
+    console.log(cloc)
+}
     return (
         
 
@@ -16,8 +22,10 @@ function BottomNav() {
                 <nav class="btmnav">
                     <ul>
                         <li>
-                          <A href="/">
-                          <span class="navspan">
+                          <A href="/" >
+                           
+                          <span class="navspan" >
+                            {/* {location.pathname == "/" ?: <HomeInActiveIcon/>} */}
                                 <HomeActiveIcon/>
                                 <span>Shop</span>
                             </span>
@@ -36,6 +44,7 @@ function BottomNav() {
                         <li>
                             <A href="/new">
                              <span class="navspan">
+                                {/* {location.pathname === '/new' ? <DressIconFilled/>: } */}
                                 <DressOutlined/>
                                 <span>New</span>
 
