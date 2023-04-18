@@ -61,16 +61,24 @@
     border-top: 1px solid #eeeeee;
     height: 50px;
   }
-  
-  .btmnav ul li {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-    font-size: 14px;
-    color: #767676;
+  .navspan {
+display: flex;
+flex-direction: column;
+align-items: center;
   }
+  nav.btmnav ul {
+
+    list-style: none;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+        font-size: 14px;
+        color: #767676;
+    }
   
   a {
     text-decoration: none;
